@@ -1,5 +1,5 @@
 /*
- * First and Last Names
+ * Gigi Novello
  */
 
 public class Homework3 {
@@ -17,12 +17,16 @@ public class Homework3 {
 	 * class (e.g. Math.random())
 	 */
 	public void grade() {
+		Homework3.grade(this);
+
 
 	}
 
 	/* Calculate and return the sum of value1, value2, and value3
 	 */
 	public int sum() {
+		return value1 + value2 + value3;
+
 
 	}
 
@@ -30,6 +34,7 @@ public class Homework3 {
 	 * Hint: the average of numbers can be fractional
 	 */
 	public double average() {
+		return this.sum() / 3.0;
 
 	}
 
@@ -37,6 +42,9 @@ public class Homework3 {
 	 * value 1, value2, and value3
 	 */
 	 public int productSumDifference() {
+		 int product = value1 * value2 * value3;
+		 return product - this.sum();
+
 
 	 }
 
@@ -44,6 +52,10 @@ public class Homework3 {
 	  * value3
 	  */
 	  public int sumSquares() {
+			int value1Sqr = (int) Math.pow(value1, 2);
+			int value2Sqr = (int) Math.pow(value2, 2);
+			int value3Sqr = (int) Math.pow(value3, 2);
+			return value1Sqr + value2Sqr + value3Sqr;
 
 	  }
 
